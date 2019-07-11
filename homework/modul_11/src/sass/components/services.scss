@@ -1,0 +1,47 @@
+/* Main Servicer */
+
+.services{
+    margin-bottom: 42px;
+
+    &__item {    
+        display: flex;    
+        flex-flow: column wrap;    
+        align-items: start;
+        position: relative;
+        padding-left: 60px;
+        max-width: 334px;
+        height: 85px; 
+
+        &:not(:nth-last-child(-n+3)) {
+        margin-bottom: 95px;
+            }
+        }
+    
+    &__list{   
+        display: flex;   
+        flex-wrap: wrap;
+        justify-content: space-around;
+        } 
+    &__icon {
+        position: absolute;
+        top: 3px;
+        left: 20px;
+        font-size:1.5em;
+        }
+    &__name {
+        text-transform: uppercase;
+        font-family: $main-font-stack;
+        font-weight: normal;
+        font-size: $main-font-size;
+        font-weight: bold;
+        color: $main-title-color;
+        margin-bottom: 20px;
+        }
+    &__describe {
+        font-family: $secondary-font-stack;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 22px;
+        
+        }    
+}

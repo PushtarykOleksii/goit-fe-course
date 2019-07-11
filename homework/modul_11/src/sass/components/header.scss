@@ -1,0 +1,42 @@
+/* Header */
+
+/* LOGO */
+.page-header {
+    background: url(../images/Layer15.jpg);
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+
+
+.description {
+    text-transform: none;
+    display: block;
+    font-family: $description-font-stack;
+
+    &_top {
+        font-size: $main_header-font-size;
+        color: $top-title-color;
+        margin-bottom: 10px;
+        }
+        
+    &_main{
+        padding-top: 46px;
+        font-size: 24px;
+        color: $main-title-color;
+        margin-bottom: 14px;
+        }
+               
+    }
+  
+
+  
+
+

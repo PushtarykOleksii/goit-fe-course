@@ -1,0 +1,156 @@
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+     }
+
+html {
+    box-sizing: border-box;
+     }
+
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 0px;
+    color: #626262;
+}
+.container {
+    font-size: 0;
+    width: 902px;
+    margin: 0 auto;
+}
+p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
+    
+.header_container {
+    font-size: 0;
+    margin: 0;
+    align-items: center;
+    font-size: 0px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header {
+    font-style: 0;
+}
+.header_container li {
+    font-size: 0px;
+    padding: 76px 0 100px 0;
+    margin-right: 105px; 
+    text-align: center;
+}
+li {
+    font-size: 0;
+    display: inline-block;}
+
+a {
+    display: inline-block;}
+
+.header_container li:last-child {
+    margin-right: 0;
+}
+.header_container a {
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none; 
+    color: #626262;
+    transition: color .2s linear;
+}
+.header_container a:hover,
+.header_container a:focus {color: #03a9f4;}
+
+/*MAIN*/
+.maindata {
+    padding-bottom: 22px;
+}
+main {
+    display: block;
+}
+.article {
+    display:inline-block;
+    width: 420px;
+    margin: 0 62px 130px 0;
+    padding: 0;
+}
+.article:nth-child(2n) {
+    margin-right: 0;
+}
+.article:nth-last-child(2) {
+    margin-bottom: 0px;
+}
+.article:nth-last-child(3) {
+        margin-bottom: 0px;
+}
+img {
+    margin: 0 0 30px 0;
+}
+.artName {
+    padding: 0;
+    margin: 0 0 32px 0;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+h3 {
+    padding: 0;
+    margin: 0 0 40px 0;
+    font-family:'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* BUTTON */
+
+
+.btn {
+    padding: 0;
+    height: 60px;
+    width: 165px;
+    margin: 86px 376px 0px 358px;
+    
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #626262;
+    background-color: #fff;
+    text-align:  center;
+    text-decoration: none;
+    color: #626262;
+    font-size: 20px;
+    font-family: "Playfair Display", Ubuntu; 
+}
+
+.btn:hover,
+.btn:focus {
+    color: #03a9f4;
+}
+
+    
+
+

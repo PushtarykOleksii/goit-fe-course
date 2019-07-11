@@ -1,0 +1,170 @@
+.s4test {
+  padding: 108px 15px 20px 15px;
+  background-image: url("../images/svg/section-4-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  font-family: $font-Helvetica;
+  font-weight: bold;
+  color: $color-dark;
+}
+
+.s4test__title {
+  position: relative;
+  color: $color-white;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 27px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/svg/icon-sputnik-3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.s4test__form {
+  padding: 30px 25px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.s4test_form__title {
+  @extend %form_title;
+  color: $color-dark;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.s4test_form__bkt {
+  @extend %form_title;
+  color: $color-yeollow;
+}
+
+.s4test_form__text {
+  color: $color-grey;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.s4test_form__text_ques {
+  color: $color-yeollow;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.s4test_form__box_btn {
+  display: none;
+  width: 119px;
+  margin: 0 auto;
+}
+
+.s4test_form__btn {
+  @extend %btn_zer;
+  color: #6b6f7a;
+  font-weight: 900;
+  line-height: 16px;
+}
+
+.s4test_form__num_ques {
+  display: inline-block;
+}
+
+.s4test_form__number {
+  font-size: 14px;
+  color: $color-yeollow;
+  margin-left: 14px;
+}
+
+.s4test_form__total {
+  font-size: 14px;
+  margin-right: 14px;
+}
+
+.s4test_form__question {
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 28px;
+}
+
+.s4test_desktop__btn {
+  display: none;
+  @extend %btn_zer;
+  color: #6b6f7a;
+  font-weight: 900;
+  line-height: 20px;
+}
+
+.s4test_desktop__btn_text {
+  text-transform: uppercase;
+  color: #6b6f7a;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 20px;
+  margin: 0 20px;
+}
+
+.s4test_form__list {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.s4test_form__num_ans {
+  display: inline-block;
+  font-size: 14px;
+  color: $color-yeollow;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-bottom: 16px;
+}
+
+.s4test_form__answer {
+  display: block;
+  font-size: 14px;
+  color: $color-grey;
+  font-weight: 400;
+}
+
+.s4test_form__item:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+
+.s4test_form__label {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/icon-square.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: 0;
+    top: 0;
+  }
+}
+
+.s4test_form__radio:checked + .s4test_form__label::before {
+  background-image: url("../images/icon-check.png");
+}
+
+.s4test_mobile__box_btn {
+  width: 119px;
+  margin: 0 auto;
+}

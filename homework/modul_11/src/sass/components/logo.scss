@@ -1,0 +1,18 @@
+.site-logo {  
+    justify-content: flex-start;
+    font-size: $logo-font-size;
+    font-weight: bold;
+    color:$site-header-color;  
+    animation: logo-anime .7s linear .1s;    
+    transition: color 0.2s;
+
+    &:hover {
+        color: $main-accent-color;
+        animation: logo-spin .7s ease .2s;
+      }
+    &:focus {
+        color: $main-accent-color;
+        outline: none;    
+        animation: logo-spin .7s ease .2s;
+    }
+    }

@@ -1,0 +1,27 @@
+.input {
+
+    &_email {
+        height: 40px;
+        width: 230px;
+        text-indent: 10px;
+        border: solid 1px;
+        border-color:$input-border-color;
+        font-family: $secondary-font-stack;
+        font-weight: italic;
+        transition: all .2s;
+        }
+    &_email:hover{
+        border-color:  $secondary-accent-color;
+        }
+    &_email:focus{
+        outline: none;
+        border-color: $secondary-accent-color;
+        }
+    &_box {
+        display: flex;    
+        justify-content: end;
+        }
+}
+
+
+

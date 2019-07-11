@@ -1,0 +1,248 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    text-decoration: none;
+    outline: none; 
+    border: none;
+}
+
+img {
+      width: 100%;
+      height: 100%;
+      display: block;
+  }
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+.logo {
+    font-family: 'Oleo Script', cursive;
+    font-size: 26px;
+    justify-content: flex-start;
+    font-weight: bold;
+    color: #fed136;
+    animation: logo-anime .7s linear .1s;
+    transition: color 0.2s;
+    }
+  .logo:hover {
+      color: #fed136;
+      animation: logo-spin .7s ease .2s;
+    }
+  .logo:focus {
+      color: #fed136;
+      outline: none;
+    }
+  
+.header {
+  margin-bottom: 120px;;
+}
+
+  /* NAV */
+  
+  .link_nav {
+    display: block;
+    color: #222222;
+  }
+  .navigation {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 38px;
+  }
+  
+  .list_nav {
+    display: flex;
+  }
+  .link_nav {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition-duration: 0.2s;
+  }
+  
+  .li_nav:not(:nth-last-child(1)) {
+    margin-right: 35px;
+  }
+  
+  
+  .link_nav:hover  {
+    color: #fed136;
+  }
+  .link_nav:focus {
+    outline: none;
+    color: #fed136;
+  }
+  
+  /* MAIN  HEADER*/
+  .main_headline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center; 
+    margin-bottom: 10px;
+  }
+  .main_description {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #777777;
+    margin-bottom: 78px;
+  }
+
+/* SERVICES */
+.circle {
+  height: 74px;
+  width: 74px;
+  border-radius: 50%;
+  border: 3px solid rgba(254, 209, 54, 1);
+  margin: 0 auto;
+}
+.services_li:nth-of-type(1) {
+  background: url(../img/Basket.png) no-repeat 120px 17px;
+  }
+  .services_li:nth-of-type(2) {
+  background: url(../img/Laptop.png) no-repeat 120px 17px;
+  }
+  .services_li:nth-of-type(3) {
+  background: url(../img/Locked.png) no-repeat 125px 17px;
+  }
+  .services_name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 103px;
+  height: 74px;
+  width: 74px;
+  border-radius: 50%;
+  border: 3px solid rgba(254, 209, 54, 1);
+  }
+  .services_name {
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #222222;
+    margin-bottom: 18px;
+    padding-top: 98px;
+    
+  }
+  .services_describe {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #777777;
+  }
+  .services_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 118px;
+  }
+  .services_li {
+    position: relative;
+    flex-basis: 280px;
+    text-align: center;
+  }
+
+  /* Bottom  Part*/
+  .black_wraper {
+    background: #222222;
+    background-image: url(../img/Map.png);
+    background-repeat: no-repeat;
+    background-position: 90% 75%;
+  }
+  .buttom_headline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    padding: 104px 0 20px 0;  
+  }
+
+  /* FORM */
+
+  .input{
+    background-color: #fff;
+  }
+  .your_message {
+    width: 452px;
+    height: 212px;
+    border-radius: 5px;
+    resize: none;
+    text-indent: 25px;
+    padding-top: 15px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .subject, .your_email, .your_name {
+    width: 455px;
+    height: 52px;
+    border-radius: 5px;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    text-indent: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+
+  .button {
+    width: 240px;
+    height: 65px;
+    color: white;
+    background: #fed136;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .form_list {
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 245px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .form {
+    padding-bottom: 115px;
+  }
+
+  ::placeholder {
+    text-transform: uppercase; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #bbbbbb;
+    
+  } 
+  
+  .form input[type='email']:focus:invalid,
+  .form input[class="input your_name"]:focus:invalid,
+  .form textarea[class="input your_message"]:focus:invalid{
+    border: 2px solid red;
+  }
+  .form input[type='email']:focus:valid,
+  .form input[class="input your_name"]:focus:valid,
+  .form textarea[class="input your_message"]:focus:valid{
+    border: 2px solid green;
+  }
+  .button:hover {
+    color: #fed136;
+    background:white
+  }
+  

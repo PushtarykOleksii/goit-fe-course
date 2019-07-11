@@ -1,0 +1,37 @@
+
+.title {
+    text-transform: uppercase;
+    font-family: $main-font-stack;
+  }
+  
+.title_top {
+    
+    font-size: 150px;
+    color: $top-title-color;
+    line-height: 92%;
+    max-width: 1050px;
+    text-align: center;
+    margin: 0 auto 106px;
+  }
+
+.title_secondary {
+    font-size: 30px;
+    color: $main-title-color;
+    position: relative;
+    margin-bottom: 150px;
+  }
+  .title_secondary::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $secondary-accent-color;   
+    transition: .3s ease-in-out;
+    position: absolute;    
+    transform: translateX(-50%);
+    bottom: -69px;
+    left: 50%;
+  }
+  .title_secondary:hover::after  {
+    width: 200px;
+  }

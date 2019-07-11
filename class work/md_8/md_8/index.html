@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="header container">
+        <nav class="nav">
+            <!-- a.nav__link*5{Link $} -->
+            <a href="" class="nav__link">Link Link 1</a>
+            <a href="" class="nav__link">Link Link 2</a>
+            <a href="" class="nav__link">Link Link 3</a>
+            <a href="" class="nav__link">Link Link 4</a>
+            <a href="" class="nav__link">Link Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Our team</h1>
+            <ul class="team__list container">
+                <li class="team__item">
+                        <!-- <picture>
+                            <source srcset="./img/extralarge.png" media="(max-width: 767px)">
+                            <source srcset="./img/large.png x2" media="(max-width: 1199px)">
+                            </picture> -->
+                            <!-- <img srcset="./img/child-1837375__340.png 340w, ./img/large.png 680w"
+                            sizes="340px" alt="…"> -->
+
+                            <picture>
+                                <source srcset="./img/extralarge.png 340w, ./img/large.png 680w" sizes="340px"
+                                media="(max-width: 767px)"
+                                >
+                                <img srcset="./img/child-1837375__340.png 340w, ./img/large.png 680w"
+                            sizes="340px" alt="…">
+                            </picture>
+                            
+                    <p>Name Surname</p>
+                </li>
+                <li class="team__item">
+                    <img src="./img/child-1837375__340.png" alt="">
+                    <p>Name Surname</p>
+                </li>
+                <li class="team__item">
+                    <img src="./img/child-1837375__340.png" alt="">
+                    <p>Name Surname</p>
+                </li>
+                <li class="team__item">
+                    <img src="./img/child-1837375__340.png" alt="">
+                    <p>Name Surname</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

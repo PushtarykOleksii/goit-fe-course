@@ -1,0 +1,137 @@
+.s4test {
+  padding-top: 164px;
+  padding-bottom: 40px;
+  background: url("../images/section-4-bg.png") no-repeat center top;
+  font-family: $font-Helvetica;
+  font-weight: bold;
+  color: $color-dark;
+}
+
+.s4test__title {
+  position: relative;
+  width: 586px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+  color: $color-white;
+  line-height: 1.25;
+  text-align: center;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: url("../images/icon-sputnik.png") no-repeat center;
+    position: absolute;
+    top: -126px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.s4test__form {
+  max-width: 1038px;
+  padding: 35px 250px 40px 224px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.s4test_form__title {
+  @extend %form_title;
+  color: $color-dark;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.s4test_form__bkt {
+  @extend %form_title;
+  color: $color-yeollow;
+}
+
+.s4test_form__text {
+  color: $color-grey;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 16px;
+  margin-bottom: 34px;
+}
+
+.s4test_form__num_ques {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 58px;
+  margin-bottom: 40px;
+}
+
+.s4test_form__btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #6b6f7a;
+  font-weight: 900;
+  margin-right: 24px;
+}
+
+.s4test_form__number {
+  font-size: 14px;
+  color: $color-yeollow;
+}
+
+.s4test_form__total {
+  font-size: 14px;
+  margin-right: 24px;
+}
+
+.s4test_form__question {
+  font-size: 17px;
+  margin-bottom: 42px;
+}
+
+.s4test_form__list {
+  list-style: none;
+}
+
+.s4test_form__num_ans {
+  display: inline-block;
+  font-size: 15px;
+  color: $color-yeollow;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-bottom: 18px;
+}
+
+.s4test_form__answer {
+  display: block;
+  font-size: 15px;
+  color: $color-grey;
+  font-weight: 400;
+}
+
+.s4test_form__item:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+
+.s4test_form__label {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/icon-square.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: 0;
+    top: 0;
+  }
+}
+
+.s4test_form__radio:checked + .s4test_form__label::before {
+  background-image: url("../images/icon-check.png");
+}

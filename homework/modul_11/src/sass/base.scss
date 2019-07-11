@@ -1,0 +1,20 @@
+*,
+*::before, 
+*::after {   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    text-decoration: none;
+    color: $main-font-color;
+    
+}
+::selection {
+    background: $secondary-accent-color;
+    color: $text-selection-color;
+    }
+
+::placeholder { /* Firefox, Chrome, Opera */ 
+    font-style: italic; 
+    color: $main-font-color;
+    } 

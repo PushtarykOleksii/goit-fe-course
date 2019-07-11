@@ -1,0 +1,178 @@
+@media (max-width: 749px) {
+.login_signup {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 116px;
+    }
+    .meet_a_partner {
+        margin-bottom: 16px;
+      }
+.partner_cart:not(:last-child) {
+    margin-bottom: 28px;
+    }
+.partner_list {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 30px;
+    }
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+.top_paragraph {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+.wrapper {
+    background: url(../img/Rectangle1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.button_to_find {
+    margin-bottom: 140px;  
+}
+.nav_wrap {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.adding_to_paragraph {
+    max-width: 225px;
+    margin: 0 auto 18px;
+}
+
+}
+
+
+
+@media (min-width: 750px)  {
+.meet_a_partner {
+    margin-bottom: 30px;
+    }
+.partner_list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+    }
+.top_paragraph {
+    font-size: 51px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    }
+.login_signup {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    }
+.nav_wrap {
+    padding-top: 40px;
+    width: 678px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.container {
+    width: 496px;
+    margin: 0 auto;
+    } 
+
+
+.top_paragraph {
+    margin-bottom: 36px;
+}
+.adding_to_paragraph {
+    margin: 0 auto 32px;
+}
+.partner_cart:nth-child(1) {
+    order: 1;
+}
+.partner_cart:nth-child(3) {
+    order: 2;
+}
+.partner_cart:nth-child(2) {
+    order: 3;
+}
+.partner_cart:nth-child(4) {
+    order: 4;
+}
+
+.wrapper {
+    background: url(../img/Rectangle2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} 
+.partner_cart:not(:nth-last-child(-n+2)) {
+    margin-bottom: 28px;
+}
+.button_to_find {
+    margin-bottom: 232px;  
+}
+}
+
+
+
+@media (min-width:960px) {
+.wrapper {
+    background: url(../img/Rectangle3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.top_paragraph {
+    font-size: 52px;
+    color: white;
+    text-transform: uppercase;
+    
+    max-width: 520px;
+    text-align: center;
+    margin: 0 auto 34px;
+  }
+.nav_wrap {
+    padding-top: 40px;
+    width: 942px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 160px;
+}
+.login_signup {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    }
+.container {
+    width: 940px;
+    margin: 0 auto;
+} 
+.partner_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    }
+.partner_cart {
+    margin-bottom: 0px;
+    }
+.partner_cart:nth-child() {
+    order: 1;
+}
+.button_to_find {
+    margin-bottom: 235px;  
+}
+}

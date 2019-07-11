@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  /* Header */
+  /* first section */
+  .first_section {
+    background: url('../img/evolution_of_a_tornado.jpg') no-repeat center;
+    height: 1200px;
+    position: relative;
+    background-size: cover;
+  
+  
+  }
+  .first_section_content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  .first_section_title {
+    font-size: 56px;
+  }
+  .first_section_description {
+    font-size: 32px;
+  }
+  .modal_overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh;
+    background-color: rgba(0,0,0,0.63);
+    z-index: 1111;
+  }
+  .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 100px;
+    text-align: center;
+  }
+  /* sticky */
+
+  .sticky_title {
+    display: inline-block;
+    font-size: 42px;
+    width: 20%;
+    margin-right: 10%;
+    vertical-align: top;
+  }
+  .sticky_text {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+    width: 70%;
+    padding: 0 10px;
+    color: cyan;
+    text-align: justify;
+
+  }
+  .sticky_item {
+    font-size: 0;
+    margin-bottom: 40px;
+    padding: 20px 0;
+  }
+  .sticky{
+    max-height: 450px;
+    max-width: 300px;
+    text-align: center;
+    overflow: auto;
+  }

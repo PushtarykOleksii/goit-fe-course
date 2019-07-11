@@ -1,0 +1,38 @@
+
+/* BUTTONS */
+.button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;    
+    transition: all 0.2s;
+    display:inline-block;
+  }
+.top_button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgba(255, 255, 255, 1);
+    display: block;
+    margin: 0 auto;
+  }
+.subscribe_button {
+    background-color: $button-footer-color;
+  }
+.top_button:hover, 
+.top_button:focus {
+    background-color: rgba(255, 255, 255, 1);
+    color: $secondary-accent-color;
+    outline: none;
+    cursor: pointer;
+  }
+  
+.subscribe_button:focus,
+.subscribe_button:hover {
+    outline: none;
+    color: $button-footer-color;
+    background-color: $secondary-accent-color;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,382 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* HEADER*/ 
+.header {
+    align-content: center;
+    padding: 34px 0 30px 0 ;
+}
+
+.logo {
+    text-decoration: none;
+    color: #656262;
+    float: left;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+    outline:none;
+}
+.logo:hover::first-letter{
+    font-weight: 900;
+    color: #1abc9c;
+}
+.logo:focus::first-letter{
+    font-weight: 900;
+    color: #1abc9c;
+    outline:none;  
+}
+.list {
+    float: right;
+}
+
+.nav_li {
+    float: left;
+    margin-top: 9px;
+    margin-right: 35px;
+}
+.nav_li:last-child {
+    margin-right: 0;
+}
+.nav_link {
+    text-transform: uppercase;
+    font-style: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    display: block;
+    color:#0f0101;
+    text-decoration: none;
+    transition: color .2s linear;
+} 
+
+
+.nav_link:hover {
+    color: #1abc9c;
+}
+.nav_link:focus {
+    color: #1abc9c;
+    outline: none; 
+}
+
+/*BACKGRAUNF AND SLIDER*/
+
+.background {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/slide1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sliderContent{
+    position: relative;
+    width: 1110px;
+    text-align: center;
+    margin: 0 auto;
+}
+.button_Slider {
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    top: 226px;
+    background: #4e9c8a;
+    opacity: 0.9;
+    border: none;
+}
+.Right{
+    right:  0;
+}
+
+.Left {
+    left: 0; 
+}
+.button_Slider:hover {
+    background: #1abc9c;
+}
+.button_Slider:focus{
+    background: #1abc9c;
+    outline: none;
+}
+
+
+.slider_link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    
+}
+.pe-7s-angle-left {
+    font-size: 100px;
+    color: #fff;
+}
+.pe-7s-angle-right {
+    font-size: 100px;
+    color: #fff;
+}
+
+.sliderText {
+    padding-top: 210px;;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sliderLi {
+    float: left;
+}
+
+.sliderLi:not(:nth-child(3)) {
+    margin-right: 6px;
+}
+
+.sliderList {
+     padding: 30px 0 0 175px;
+}
+
+.slider_link:hover {
+    color: #1abc9c;
+}
+.slider_link:focus {
+    color: #1abc9c;
+    outline: none;
+}
+
+/*COLECTION*/
+.products {
+    background-color: #e9f0fd;
+}
+ 
+.products_paragraph {
+    text-align: center;  
+    padding-top: 100px;
+    margin-bottom: 92px;
+    text-transform: uppercase;  
+    font-size: 48px;
+    font-weight:900;
+    color: #555252;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 32px 0 80px 474px;
+}
+
+.itemsBlock{
+    height: 332px;
+    float: left;
+    position: relative;
+}
+.itemsBlock:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.img_product{
+    display: block;   
+    width: 255px;
+    height: 332px;
+    background-color: #e9f0fd;
+} 
+.box_label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.items {
+    margin-bottom: 100px; 
+}
+
+/* LABELS*/
+
+.productName {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 9px 0 0 12px;
+    width: 201px;
+    height: 40px;
+    float: left;
+    background-color: #323232;
+    color: #fff;
+    
+} 
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    padding:9px 0 0 10px;
+    float: right;
+    background-color: #8c8c8c;
+    width: 54px;
+    height: 40px;
+    }
+
+.itemsBlock:hover .price{
+    background-color: #7fd9c7;
+}
+.itemsBlock:hover .productName{
+    background-color: #1abc9c;
+}
+    
+.hooverContent {
+    opacity: 0;
+    position: absolute;
+    height: 292px;
+    width: 255px;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid rgba(255, 255, 255, .5);
+    border-width: 12px 10px;
+    background-clip: padding-box;
+}
+
+/**/ 
+
+.hooverContent:hover {
+    opacity: 1;
+}
+
+.itemsBlock:hover .hooverContent {
+    opacity: 1;
+}
+
+li .like, .shafl, .clock{
+    position: absolute;
+    color: #f5f4f5;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #f5f4f5;
+    background: none;
+} 
+.like:hover {
+    background: #1abc9c;
+    opacity: 1;
+    border: none;
+    border: 1px solid #1abc9c;
+}
+.like:focus{
+    outline-style: none;
+}
+.shafl:hover {
+    background: #1abc9c;
+    opacity: 1;
+    border: none;
+    border: 1px solid #1abc9c;
+}
+
+.shafl:focus{
+    outline-style: none;
+}
+.clock:hover {
+    background: #1abc9c;
+    opacity: 1;
+    border: none;
+    border: 1px solid #1abc9c; 
+}
+
+.clock:focus{
+    outline-style: none;
+}
+.adToCard:hover{
+    background: #1abc9c;
+}
+.adToCard:focus{
+    outline-style: none;
+}
+
+.like{
+    top: 80px;
+    left: 35px;
+    
+}
+.shafl{
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.clock {
+    top: 80px;
+    right: 34px;
+    
+    }
+.adToCard{
+    background: #323232;
+    position: absolute;
+    left: 35px;
+    bottom: 75px;
+    color: #f5f4f5;
+    display: inline-block;
+    width: 166px;
+    height: 50px;
+    border: 1px solid #f5f4f5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: end;
+    padding: 0 16px 0 0;
+    
+}
+.pe-7s-like, .pe-7s-shuffle, .pe-7s-clock, .pe-7s-cart {
+
+    font-size: 28px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+ /*FOOTER*/
+footer {
+     height: 88px;
+     background: #323232;
+     font-style: 'Open Sans', sans-serif;
+     font-size: 16px;
+     color: #fefefe;
+     text-align: center;
+     padding-top: 36px;
+}
+.desiner:hover {
+     color: #45b6a1;
+}
+.desiner:focus {
+    outline: none;
+}
+ 
+
+
+
+
+
+

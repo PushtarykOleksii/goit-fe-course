@@ -1,0 +1,167 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+img {
+      width: 100%;
+      height: 100%;
+      display: block;
+  }
+  /* header  */
+
+.logo {
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  
+}
+.login_butt {
+  width: 88px;
+  height: 36px;
+  border-radius: 18px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0);
+  
+}
+
+.login_butt:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+.login_butt:focus {
+  outline: none;
+}
+
+
+
+
+.adding_to_paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 15px;
+}
+.button_to_find {
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ff4e50;
+  border: none;
+  font-size: 14px;
+  color: white;
+  
+  transition: all .2s;
+}
+.button_to_find:hover {
+  background: white;
+  border: 2px solid #ff0004;
+  color: #ff4e50;
+}
+.button_to_find:focus {
+  outline: none;
+}
+
+/* main */
+.meet_a_partner {
+  font-size: 22px;
+  padding-top: 68px;
+}
+.icon_link, .tv {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 1);
+  position: absolute;
+  top:90px;
+  left: 130px;
+  
+}
+.tv {
+  background:#ff4e50;
+}
+.lub {
+  background:#ffa507;
+}
+.coffe {
+  background:#1cd7ad;
+}
+.telegram {
+  background:#4e73db;
+}
+.partner_pic {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  transition: all .3s;
+}
+.partner_name {
+  font-size: 14px;
+}
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #666666;
+}
+.partner_cart:hover .icon_img {
+ transform: rotate(360deg) scale(1.5);
+}
+.partner_cart:hover {
+  box-shadow: 45px 28px 41px -37px rgba(0,0,0,0.58);
+}
+.partner_cart:hover .partner_pic {
+  transform: scale(1.2);
+ }
+
+.partner_cart {
+  position: relative;
+  width: 225px;
+  max-height:236px;
+  margin: 0 auto;
+  transition: all .3s;
+}
+
+.icon_img {
+  height: 16px;
+  width: 16px;
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  transition: all .5s;
+}
+.partner_name {
+  margin-bottom: 12px;
+}
+
+  /* button */
+  .find_partners {
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    background: white;
+    border: 2px solid #ff4e50;
+    color: #ff4e50;
+    margin-bottom: 57px;
+    transition: all .2s
+  }
+  .find_partners:hover {
+    background: #ff4e50;
+    border: 2px solid #ff0004;
+    color: white;
+  }
+  .find_partners:focus {
+    outline: none;
+  }

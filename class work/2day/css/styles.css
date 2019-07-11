@@ -1,0 +1,90 @@
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+img {
+      width: 100%;
+      height: 100%;
+      display: block;
+  }
+  .conteiner {
+      min-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  /*  FIRST SECTION */
+  .title {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+.first_section{
+    padding: 100px 0 0;
+    background-image: url(../img/pexels-photo-257360.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: beige;
+}
+.first_title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.first_title:hover {
+    color: aqua;
+}
+
+.first_section_text {
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+ /* book store */
+
+.books_item {
+    float: left;
+    width: 300px;
+    margin-bottom: 40px;
+}
+.books_item:nth-of-type(odd) {
+    margin-right: 360px;
+    }
+.books_item:nth-last-of-type(-n+2){
+    margin-bottom: 0;
+}
+
+/* stores */
+.stores_list {
+    counter-reset: count-stores;
+    min-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.stores_item {
+    counter-increment: count-stores;
+    width: 300px;
+    margin: 0 20px;
+    display: inline-block;
+}
+.stores_item::before {
+content: counter(count-stores);
+}
+.center_text {
+    vertical-align: middle;
+
+}
+.first_section_vertical:hover{
+    filter:   hue-rotate(180deg)

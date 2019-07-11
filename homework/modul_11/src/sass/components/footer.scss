@@ -1,0 +1,32 @@
+
+/* FOOTER */
+.footer {
+    min-height: 64px;
+    color: $main-title-color;  
+    display: flex;    
+    align-items: center;    
+    flex-wrap: wrap;   
+    justify-content: space-between;
+  }
+  
+.copyright {
+    font-family: $main-font-stack;
+    font-size: $main-font-size;
+    color: $main-title-color;
+  }
+.autor {
+    &_link {
+        color: $main-title-color;   
+        transition: color 0.2s;
+        }
+    &_link:hover {
+        color:$secondary-accent-color;
+        }
+    &_link:focus {
+        outline: none;
+        color:$secondary-accent-color;
+        }
+}
+
+
+
